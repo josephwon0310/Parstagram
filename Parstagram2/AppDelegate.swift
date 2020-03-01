@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://blooming-inlet-95867.herokuapp.com/parse"
             })
         )
-        print("Am I even here?")
+        //print("Am I even here?")
         
         return true
     }

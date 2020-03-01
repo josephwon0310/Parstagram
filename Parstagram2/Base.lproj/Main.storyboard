@@ -160,7 +160,7 @@
                                             <outlet property="usernameLabel" destination="ikK-Ox-JdV" id="WuH-oP-rls"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="zrm-0V-Z3a" customClass="CommentCell" customModule="Parstagram2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommentCell" id="zrm-0V-Z3a" customClass="CommentCell" customModule="Parstagram2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="455" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zrm-0V-Z3a" id="SWg-uM-daq">
@@ -168,7 +168,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSC-4w-CqP">
-                                                    <rect key="frame" x="16" y="8" width="51.5" height="28"/>
+                                                    <rect key="frame" x="16" y="8" width="76" height="28"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="AtK-6S-DkU"/>
                                                         <constraint firstAttribute="height" constant="40" id="mjB-xD-6pb"/>
@@ -198,6 +198,31 @@
                                             <outlet property="authorLabel" destination="VSC-4w-CqP" id="dAn-V6-hdf"/>
                                             <outlet property="commentLabel" destination="Rcw-dJ-Qiw" id="z12-BN-Bu1"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="gZT-td-lca">
+                                        <rect key="frame" x="0.0" y="499" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gZT-td-lca" id="fhb-8d-DRQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Comment .." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0l-TT-kRh">
+                                                    <rect key="frame" x="32" y="19" width="30" height="6"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="0mb-0g-QbQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="o0l-TT-kRh" firstAttribute="top" secondItem="fhb-8d-DRQ" secondAttribute="topMargin" constant="8" id="67O-47-H1H"/>
+                                                <constraint firstItem="o0l-TT-kRh" firstAttribute="leading" secondItem="fhb-8d-DRQ" secondAttribute="leadingMargin" constant="16" id="8FR-TI-6II"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="o0l-TT-kRh" secondAttribute="bottom" constant="8" id="U5v-av-4r5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="o0l-TT-kRh" secondAttribute="trailing" constant="8" id="kFC-XV-qMe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

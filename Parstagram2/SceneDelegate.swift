@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window?.rootViewController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
             self.window?.makeKeyAndVisible()
         }
-        print("scene loading!")
+        //print("scene loading!")
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
